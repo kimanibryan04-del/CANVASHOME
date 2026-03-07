@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Agents - Canvas Homes</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    {% load static %}
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/agents.png' %}" rel="icon">
+  <link href="{% static 'assets/img/agents.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/drift-zoom/drift-basic.css' %}" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheProperty
+  * Template URL: https://bootstrapmade.com/theproperty-bootstrap-real-estate-template/
+  * Updated: Aug 05 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="agents-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Canvas Homes</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+         <li><a href="{% url 'home' %}" class="active">Home</a></li>
+          <li><a href="{% url 'about' %}" class="active">About</a></li>
+          <li><a href="{% url 'properties' %}">Properties</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'agents' %}">Agents</a></li>
+          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{% url 'propertydetails' %}">Property Details</a></li>
+              <li><a href="{% url 'servicedetails' %}">Service Details</a></li>
+              <li><a href="{% url 'agentprofile' %}">Agent Profile</a></li>
+              <li><a href="{% url 'terms' %}">Terms</a></li>
+              <li><a href="{% url 'privacy' %}">Privacy</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="{% url 'properties' %}">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title">Agents</h1>
+              <p class="mb-0">
+                Our team of dedicated professionals is the backbone of Canvas Homes. We bring years of local market expertise and a commitment to personalized service, ensuring that every client finds not just a house, but a home that fits their future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Agents</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Agents Section -->
+    <section id="agents" class="agents section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="featured-agent">
+              <div class="agent-image">
+                <img src="{% static 'assets/img/person/senior%20inv.png' %}" alt="Featured Agent" class="img-fluid">
+                <div class="agent-badge">Top Seller</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="featured-content">
+              <h3>Emily Rodriguez</h3>
+              <span class="position">Senior Real Estate Advisor</span>
+
+              <div class="specialties">
+                <span class="badge">Luxury Homes</span>
+                <span class="badge">Investment Properties</span>
+                <span class="badge">First-Time Buyers</span>
+              </div>
+
+              <blockquote>
+                "With over a decade of experience in the luxury market, Emily has built a reputation for her meticulous attention to detail and unwavering advocacy for her clients. She specializes in navigating complex negotiations and finding hidden gems for first-time buyers and seasoned investors alike."
+              </blockquote>
+
+              <div class="stats">
+                <div class="stat-item">
+                  <span class="number">150+</span>
+                  <span class="label">Properties Sold</span>
+                </div>
+                <div class="stat-item">
+                  <span class="number">Ksh 45M</span>
+                  <span class="label">Total Sales</span>
+                </div>
+                <div class="stat-item">
+                  <span class="number">5</span>
+                  <span class="label">Years Experience</span>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+254 751095178</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>emilyrodriguez@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Downtown Karen Office</span>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+              </div>
+
+              <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">View My Listings</a>
+                <a href="#" class="btn btn-outline">Schedule Consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="section-subtitle">Our Expert Team</h4>
+            <p class="section-description">Meet our dedicated professionals who are committed to helping you find your perfect home or sell your property at the best value.</p>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="agent-card">
+              <div class="agent-photo">
+                <img src="{% static 'assets/img/real-estate/property%20consultant.png' %}" alt="Agent" class="img-fluid">
+                <div class="hover-overlay">
+                  <div class="contact-actions">
+                    <a href="#" class="action-btn" title="Call"><i class="bi bi-telephone"></i></a>
+                    <a href="#" class="action-btn" title="Email"><i class="bi bi-envelope"></i></a>
+                    <a href="#" class="action-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-info">
+                <h5>Michael Williams</h5>
+                <span class="role">Property Consultant</span>
+                <div class="location">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Karen, Nairobi</span>
+                </div>
+                <div class="languages">
+                  <span class="lang-tag">English</span>
+                  <span class="lang-tag">Mandarin</span>
+                </div>
+                <a href="#" class="view-listings">View Listings</a>
+              </div>
+            </div>
+          </div><!-- End Agent Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="agent-card">
+              <div class="agent-photo">
+                <img src="{% static 'assets/img/real-estate/commercial%20specialist.png' %}" alt="Agent" class="img-fluid">
+                <div class="agent-status verified">Verified</div>
+                <div class="hover-overlay">
+                  <div class="contact-actions">
+                    <a href="#" class="action-btn" title="Call"><i class="bi bi-telephone"></i></a>
+                    <a href="#" class="action-btn" title="Email"><i class="bi bi-envelope"></i></a>
+                    <a href="#" class="action-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-info">
+                <h5>Sarah Nasieku</h5>
+                <span class="role">Commercial Specialist</span>
+                <div class="location">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Kileleshwa, Nairobi</span>
+                </div>
+                <div class="languages">
+                  <span class="lang-tag">English</span>
+                  <span class="lang-tag">Maasai</span>
+                </div>
+                <a href="#" class="view-listings">View Listings</a>
+              </div>
+            </div>
+          </div><!-- End Agent Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="agent-card">
+              <div class="agent-photo">
+                <img src="{% static 'assets/img/real-estate/luxury%20home%20consultant.png' %}" alt="Agent" class="img-fluid">
+                <div class="hover-overlay">
+                  <div class="contact-actions">
+                    <a href="#" class="action-btn" title="Call"><i class="bi bi-telephone"></i></a>
+                    <a href="#" class="action-btn" title="Email"><i class="bi bi-envelope"></i></a>
+                    <a href="#" class="action-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-info">
+                <h5>David Kimani</h5>
+                <span class="role">Luxury Home Advisor</span>
+                <div class="location">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Runda, Nairobi</span>
+                </div>
+                <div class="languages">
+                  <span class="lang-tag">English</span>
+                  <span class="lang-tag">Kikuyu</span>
+                </div>
+                <a href="#" class="view-listings">View Listings</a>
+              </div>
+            </div>
+          </div><!-- End Agent Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="agent-card">
+              <div class="agent-photo">
+                <img src="{% static 'assets/img/real-estate/residential%20consultant.png' %}" alt="Agent" class="img-fluid">
+                <div class="agent-status new">New Agent</div>
+                <div class="hover-overlay">
+                  <div class="contact-actions">
+                    <a href="#" class="action-btn" title="Call"><i class="bi bi-telephone"></i></a>
+                    <a href="#" class="action-btn" title="Email"><i class="bi bi-envelope"></i></a>
+                    <a href="#" class="action-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-info">
+                <h5>Jumwa Hassan</h5>
+                <span class="role">Residential Specialist</span>
+                <div class="location">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Lavington, Nairobi</span>
+                </div>
+                <div class="languages">
+                  <span class="lang-tag">English</span>
+                   <span class="lang-tag">Swahili</span>
+                </div>
+                <a href="#" class="view-listings">View Listings</a>
+              </div>
+            </div>
+          </div><!-- End Agent Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Agents Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-content">
+            <a href="index.html" class="logo d-flex align-items-center mb-4">
+              <span class="sitename">Canvas Homes</span>
+            </a>
+            <p class="mb-4">Canvas Homes is a premier real estate agency dedicated to providing exceptional living experiences. We combine market-leading expertise with a commitment to integrity to help you find your place in the heart of the city.</p>
+
+            <div class="newsletter-form">
+              <h5>Stay Updated</h5>
+              <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="input-group">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
+                  <button type="submit" class="btn-subscribe">
+                    <i class="bi bi-send"></i>
+                  </button>
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Thank you for subscribing!</div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> About</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Careers</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Press</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Digital Strategy</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Cloud Computing</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Data Analytics</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> AI Solutions</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Cybersecurity</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-info">
+                 <p>Westlands <br> Nairobi <br>Kenya</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-info">
+                <p>+254 119342515</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <p>kimanibryan04@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you've purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/drift-zoom/Drift.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

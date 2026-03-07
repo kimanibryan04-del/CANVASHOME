@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - Canvas Homes</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    {% load static %}
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/about.png' %}" rel="icon">
+  <link href="{% static 'assets/img/about.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+   <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/drift-zoom/drift-basic.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheProperty
+  * Template URL: https://bootstrapmade.com/theproperty-bootstrap-real-estate-template/
+  * Updated: Aug 05 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Canvas Homes</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+         <li><a href="{% url 'home' %}" class="active">Home</a></li>
+          <li><a href="{% url 'about' %}" class="active">About</a></li>
+          <li><a href="{% url 'properties' %}">Properties</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'agents' %}">Agents</a></li>
+          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{% url 'propertydetails' %}">Property Details</a></li>
+              <li><a href="{% url 'servicedetails' %}">Service Details</a></li>
+              <li><a href="{% url 'agentprofile' %}">Agent Profile</a></li>
+              <li><a href="{% url 'terms' %}">Terms</a></li>
+              <li><a href="{% url 'privacy' %}">Privacy</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="{% url 'properties' %}">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title">About</h1>
+              <p class="mb-0">
+              Canvas Homes was founded on the principle that finding a home should be an inspiring journey. We combine deep market knowledge with a personalized touch to help our clients navigate the complexities of the real estate market. Our mission is to provide transparent, reliable, and high-quality property solutions that stand the test of time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-7">
+            <div class="intro-content" data-aos="fade-right" data-aos-delay="200">
+              <div class="section-badge">
+                <i class="bi bi-house-heart"></i>
+                <span>Your Trusted Real Estate Partner</span>
+              </div>
+              <h2>Building Dreams, Creating Homes Since 2010</h2>
+              <p class="lead-text">At Canvas Homes, we believe a house is more than just a structure—it is the foundation of your future. We specialize in connecting families and investors with premium properties across Kenya, ensuring every transaction is handled with integrity and local expertise.</p>
+              <p>Whether you are looking for a modern urban apartment or a serene suburban estate, our dedicated team is here to guide you home. Discover a seamless real estate experience tailored specifically to your needs.
+              <div class="founder-highlight" data-aos="fade-up" data-aos-delay="300">
+                <div class="founder-image">
+                  <img src="{% static 'assets/img/person/ceo.png' %}" alt="Founder" class="img-fluid">
+                </div>
+                <div class="founder-info">
+                  <blockquote>"At Canvas Homes, our mission has always been simple: to turn the dream of homeownership into a reality through transparency, dedication, and unrivaled local expertise. Since 2010, we haven't just been selling properties; we've been building the communities where our clients thrive."</blockquote>
+                  <div class="founder-details">
+                    <h5>Bryan Kimani</h5>
+                    <span>Founder &amp; CEO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="visual-section" data-aos="fade-left" data-aos-delay="250">
+              <div class="main-image">
+                <img src="{% static 'assets/img/real-estate/property-exterior-7.webp' %}" alt="Luxury Development" class="img-fluid">
+                <div class="experience-badge">
+                  <div class="badge-number">14+</div>
+                  <div class="badge-text">Years of Excellence</div>
+                </div>
+              </div>
+              <div class="overlay-image">
+                <img src="{% static 'assets/img/real-estate/property-interior-6.webp' %}" alt="Interior Design" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievements-grid" data-aos="fade-up" data-aos-delay="350">
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="achievement-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="achievement-icon">
+                  <i class="bi bi-key"></i>
+                </div>
+                <div class="achievement-number">
+                  <span data-purecounter-start="0" data-purecounter-end="2850" data-purecounter-duration="2" class="purecounter"></span>+
+                </div>
+                <div class="achievement-label">Properties Sold</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="achievement-item" data-aos="zoom-in" data-aos-delay="450">
+                <div class="achievement-icon">
+                  <i class="bi bi-heart-fill"></i>
+                </div>
+                <div class="achievement-number">
+                  <span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2" class="purecounter"></span>%
+                </div>
+                <div class="achievement-label">Client Satisfaction</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="achievement-item" data-aos="zoom-in" data-aos-delay="500">
+                <div class="achievement-icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="achievement-number">
+                  <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="2" class="purecounter"></span>
+                </div>
+                <div class="achievement-label">Cities Covered</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="achievement-item" data-aos="zoom-in" data-aos-delay="550">
+                <div class="achievement-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <div class="achievement-number">
+                  <span data-purecounter-start="0" data-purecounter-end="127" data-purecounter-duration="2" class="purecounter"></span>
+                </div>
+                <div class="achievement-label">Industry Awards</div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Achievements Grid -->
+
+        <div class="timeline-section" data-aos="fade-up" data-aos-delay="400">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="section-header text-center mb-5">
+                <h3>Our Journey of Excellence</h3>
+                <p>Since our inception, we have stayed true to our core values while expanding our reach and impact across the region.</p>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="450">
+                  <div class="timeline-year">2010</div>
+                  <div class="timeline-content">
+                    <h4>Company Founded</h4>
+                    <p>Canvas Homes was established with a small, dedicated team and a vision to redefine professional property consulting in Nairobi.</p>
+                  </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="500">
+                  <div class="timeline-year">2015</div>
+                  <div class="timeline-content">
+                    <h4>1000th Property Milestone</h4>
+                    <p>Five years into our journey, we celebrated our 1000th successful property transaction, cementing our status as a trusted market leader.</p>
+                  </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="550">
+                  <div class="timeline-year">2020</div>
+                  <div class="timeline-content">
+                    <h4>Digital Innovation Launch</h4>
+                    <p>To better serve our clients, we launched our fully integrated digital platform, allowing for virtual tours and seamless online property management.</p>
+                  </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="600">
+                  <div class="timeline-year">2024</div>
+                  <div class="timeline-content">
+                    <h4>Regional Expansion</h4>
+                    <p>We are proud to have expanded our services beyond Nairobi, bringing the Canvas Homes standard of excellence to major cities across the region.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Timeline Section -->
+
+        <div class="team-preview" data-aos="fade-up" data-aos-delay="450">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h3>Meet Our Expert Team</h3>
+              <p class="team-description">Our success is driven by a team of dedicated professionals who bring years of local market experience and a passion for helping you find your dream home. Meet the experts behind your next successful property journey.</p>
+
+              <div class="team-grid">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="team-member" data-aos="flip-up" data-aos-delay="500">
+                      <div class="member-image">
+                        <img src="{% static 'assets/img/real-estate/senior.png' %}" alt="Team Member" class="img-fluid">
+                      </div>
+                      <div class="member-info">
+                        <h5>Aysha Nyambura</h5>
+                        <span>Senior Property Advisor</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="team-member" data-aos="flip-up" data-aos-delay="550">
+                      <div class="member-image">
+                        <img src="{% static 'assets/img/real-estate/investment%20manager.png' %}" alt="Team Member" class="img-fluid">
+                      </div>
+                      <div class="member-info">
+                        <h5>Jabari Ochieng</h5>
+                        <span>Investment Specialist</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="team.html" class="view-team-btn">View Full Team</a>
+            </div>
+          </div>
+        </div><!-- End Team Preview -->
+
+      </div>
+
+    </section><!-- /About Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-content">
+            <a href="index.html" class="logo d-flex align-items-center mb-4">
+              <span class="sitename">Canvas Homes</span>
+            </a>
+            <p class="mb-4">Canvas Homes is a premier real estate agency dedicated to providing exceptional living experiences. We combine market-leading expertise with a commitment to integrity to help you find your place in the heart of the city.</p>
+
+            <div class="newsletter-form">
+              <h5>Stay Updated</h5>
+              <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="input-group">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
+                  <button type="submit" class="btn-subscribe">
+                    <i class="bi bi-send"></i>
+                  </button>
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Thank you for subscribing!</div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> About</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Careers</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Press</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Digital Strategy</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Cloud Computing</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Data Analytics</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> AI Solutions</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Cybersecurity</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-info">
+                <p>Westlands <br> Nairobi <br>Kenya</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-info">
+                <p>+254 119342515</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <p>kimanibryan04@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you've purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/drift-zoom/Drift.min.js' %}"></script>
+
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
