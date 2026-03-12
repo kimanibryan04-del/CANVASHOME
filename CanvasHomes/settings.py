@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-zo_=+z7%b^8u%^7j)o$9#a5-!ow^sh_@_=^zm^az31nxtwz#5d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['your-app-name.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['canvas-homes.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
