@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.sitemaps.views import sitemap  # Ensure this is imported
-from canvasapp.sitemaps import YourSitemapClass  # Replace with your actual class name
+from canvasapp.sitemaps import PropertySitemap  # Replace with your actual class name
 
 sitemaps = {
-    'static': YourSitemapClass,
+    'static': PropertySitemap,
 }
 
 urlpatterns = [
